@@ -1,0 +1,7 @@
+str=input("enter astring")
+n=len(str)
+check=0
+for i in range(0,n):
+   if str[i].isalpha()==1:
+    check=check+1
+print(check)

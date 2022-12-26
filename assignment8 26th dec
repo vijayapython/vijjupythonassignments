@@ -1,0 +1,12 @@
+def leap(y):
+    if ((y%4==0 and y%100!=0) or (y%400==0)):
+        return 1
+    else:
+        return 0
+    
+n1=int(input('enter starting year: '))
+n2=int(input('enter ending year: '))
+while n1<n2:
+    if leap(n1)==1:
+        print(n1,end=' ')
+    n1=n1+1

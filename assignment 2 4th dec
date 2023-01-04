@@ -1,0 +1,24 @@
+n=int(input())
+A=[]
+p=[]
+s=[]
+for i in range(0,n):
+    l=[]
+    for j in range(0,n):
+        x=int(input())
+        l.append(x)
+    A.append(l)
+for i in range(n):
+    for j in range(n):
+        if i==j:
+            p.append(A[i][j])
+            
+for i in range(n):
+    for j in range(n):
+        if i+j==n-1:
+            s.append(A[i][j])
+sl=[]
+sl=p+s
+sl.sort()
+print(sl[-1])
+

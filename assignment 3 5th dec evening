@@ -1,0 +1,7 @@
+n=int(input())
+l=list(map(int,input().split()))
+k=int(input())
+l.sort()
+m=l[k:n]
+print(max(m)-min(m))
+

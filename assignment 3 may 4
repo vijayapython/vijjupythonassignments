@@ -1,0 +1,17 @@
+n=int(input())
+p=palindrome()
+p.check(n) 
+   
+#fibonacci
+class fibonacci:
+    def check(self, n):
+        s=[]
+        a, b = 0, 1
+        for i in range(n+1):
+            s.append(a)
+            a, b = b, a + b
+        print(s)
+
+n = int(input())
+f=fibonacci()
+f. check(n)

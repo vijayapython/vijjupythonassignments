@@ -1,0 +1,12 @@
+n= int(input())
+s =LeapYear() 
+s. check(n)
+#palindrome
+class palindrome:
+    def check(self, n):
+        t=int(str(n)[::-1])
+        if t==n:
+            print('palindrome')
+        else:
+            print('not palindrome')
+            
